@@ -12,7 +12,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 
 group = 'com.skaera'
-version = '1.0.0'
+version = '1.0.1'
 
 java {
     archivesBaseName = 'legendarydiscord'
@@ -148,7 +148,7 @@ dependencies {
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-    compileOnly 'pixelmon:Pixelmon-1.16.5-9.0.6-server:9.0.6'
+    compileOnly 'pixelmon:Pixelmon-1.16.5-9.0.11-server:9.0.11'
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
