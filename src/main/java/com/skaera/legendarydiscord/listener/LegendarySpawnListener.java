@@ -31,7 +31,7 @@ public class LegendarySpawnListener {
         PixelmonEntity entity = event.action.getOrCreateEntity() instanceof PixelmonEntity ? (PixelmonEntity) event.action.getOrCreateEntity() : null;
         if(entity == null)
             return;
-        if(entity.getPokemon().isLegendary() && !entity.getPokemon().isBossPokemon()) {
+        if(entity.getPokemon().isLegendary() && !entity.isBossPokemon()) {
             Config config = new Config();
             DiscordWebHook webhook = new DiscordWebHook(config.getString("webhook"));
 
@@ -51,7 +51,7 @@ public class LegendarySpawnListener {
         PixelmonEntity entity = event.action.getOrCreateEntity() instanceof PixelmonEntity ? (PixelmonEntity) event.action.getOrCreateEntity() : null;
         if(entity == null)
             return;
-        if(entity.getPokemon().isLegendary() && !entity.getPokemon().isBossPokemon()) {
+        if(entity.getPokemon().isLegendary() && !entity.isBossPokemon()) {
             Config config = new Config();
             if(config.getBool("use_title")) {
 
