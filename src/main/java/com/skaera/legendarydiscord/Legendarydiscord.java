@@ -22,7 +22,7 @@ import java.io.File;
 @Mod("legendarydiscord")
 public class Legendarydiscord {
 
-    public static String VERSION = "1.0.0";
+    public static String VERSION = "1.0.1;
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
