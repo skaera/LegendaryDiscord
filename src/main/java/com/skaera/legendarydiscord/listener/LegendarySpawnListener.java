@@ -16,8 +16,20 @@ import java.io.IOException;
 public class LegendarySpawnListener {
     public String changeStr(String val) {
         char[] arr = val.toCharArray();
-        arr[0] = Character.toLowerCase(arr[0]);
-        return new String(arr).replaceAll(" ", "-");
+
+        for(int i = 0; i < arr.length; ++i) {
+            arr[i] = Character.toLowerCase(arr[i]);
+        }
+
+        String str = new String(arr);
+        if (str.contains("tapu")) {
+            StringBuffer stringBuffer = new StringBuffer();
+            stringBuffer.append(str);
+            stringBuffer.insert(4, "-");
+            return stringBuffer.toString();
+        } else {
+            return new String(arr);
+        }
     }
 
     @SubscribeEvent
